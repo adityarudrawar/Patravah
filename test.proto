@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "github.com/adityarudrawar/Patravah/main";
+
+service TestService {
+  rpc SayHello (TestRequest) returns (TestResponse);
+}
+
+message TestRequest {
+  string name = 1;
+}
+
+message TestResponse {
+  string message = 1;
+}
